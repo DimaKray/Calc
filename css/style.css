@@ -104,3 +104,16 @@ p {
 .bg-yelow {
    background-color: #D0D49F;
 }
+/*hover*/
+.btm:hover {
+   background: rgba(255,255,255,0.3);
+   transition: all 0.5s;
+}
+.bg-grey:hover {
+   background-color: #c1d0d2;
+   transition: all 0.5s;
+}
+.bg-yelow:hover {
+   background-color: #cbd27b;
+   transition: all 0.5s;
+}
