@@ -8,11 +8,14 @@ const clear = 'C';
 const output = document.querySelector('.panel p');
 
 document.querySelector('.buttoms').onclick = (event) => {
+   //click check
    if (!event.target.classList.contains('btm')) {
       return;
    };
+   //clear panel output on start
    output.textContent = '';
 
+   //logic numbers
    const key = event.target.textContent;
    if (numbers.includes(key)) {
       if (y === '' && symbol ==='') {
@@ -30,6 +33,7 @@ document.querySelector('.buttoms').onclick = (event) => {
       };
    };
 
+   //logic actions
    if (actions.includes(key)) {
       symbol = key;
       console.log(symbol);
@@ -37,6 +41,7 @@ document.querySelector('.buttoms').onclick = (event) => {
       return;
    };
 
+   //logic =
    if (key === '=') {
       if (y === '') {
          y = x;
@@ -61,12 +66,16 @@ document.querySelector('.buttoms').onclick = (event) => {
             }
             x = x / y;
             break;
+         case '%':
+            x = x % y;
+            break;
       }
       end = true;
       output.textContent = x;
       console.log(x, y, symbol)
    };
 
+   //buttom clear
    if (clear.includes(key)) {
       x = '';
       y = '';

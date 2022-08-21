@@ -54,6 +54,8 @@ body {
    margin-left: 448px;
    margin-top: 69px;
 }
+
+/*panel output*/
 p {
    margin-top: 17px;
    margin-right: 17px;
@@ -70,6 +72,8 @@ p {
    line-height: 41px;
    margin: 28px 30px 42px 29px;
 }
+
+/*buutoms panel*/
 .buttoms {
    margin-left: 4px;
    margin-top: 21px;
@@ -104,6 +108,7 @@ p {
 .bg-yelow {
    background-color: #D0D49F;
 }
+
 /*hover*/
 .btm:hover {
    background: rgba(255,255,255,0.3);
